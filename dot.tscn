@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://dot.gd" type="Script" id=1]
+[ext_resource path="res://dot.png" type="Texture" id=2]
+
+[node name="cube" type="Position2D"]
+
+script/script = ExtResource( 1 )
+dot_type = "cube"
+
+[node name="sprite" type="Sprite" parent="."]
+
+transform/scale = Vector2( 50, 50 )
+texture = ExtResource( 2 )
+
+

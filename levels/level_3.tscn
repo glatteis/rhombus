@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://level.gd" type="Script" id=1]
+[ext_resource path="res://dot.tscn" type="PackedScene" id=2]
+
+[node name="level_3" type="Node2D"]
+
+script/script = ExtResource( 1 )
+line_color = Color( 0, 0, 0, 1 )
+line_thickness = 5
+scene_number = 3
+
+[node name="dot" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 542.721, 240.955 )
+
+[node name="dot1" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 337.689, 442.304 )
+
+[node name="dot2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 742.721, 190.955 )
+
+[node name="dot3" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 537.689, 392.304 )
+
+

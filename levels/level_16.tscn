@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://level.gd" type="Script" id=1]
+[ext_resource path="res://triangle_ra.tscn" type="PackedScene" id=2]
+[ext_resource path="res://triangle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://reset_button.tscn" type="PackedScene" id=4]
+
+[node name="level16" type="Node2D"]
+
+script/script = ExtResource( 1 )
+line_color = Color( 0, 0, 0, 1 )
+line_thickness = 5
+scene_number = 16
+custom_next_scene = null
+
+[node name="triangle" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 296.277, 440.375 )
+transform/rot = 10.0
+
+[node name="triangle 2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 240.177, 122.212 )
+transform/rot = 49.7
+
+[node name="triangle3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 437.138, 87.4823 )
+transform/rot = 149.0
+
+[node name="triangle2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 859.35, 300.47 )
+transform/rot = -149.0
+
+[node name="triangle 3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 533.179, 548.887 )
+transform/rot = -11.9
+
+[node name="triangle4" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 500.181, 259.953 )
+transform/rot = -11.9
+
+[node name="triangle5" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 893.404, 471.441 )
+transform/rot = -446.9
+
+[node name="triangle6" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 661.431, 330.104 )
+transform/rot = 546.2
+
+[node name="triangle7" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 699.991, 100.197 )
+transform/rot = -347.5
+
+[node name="reset_button" parent="." instance=ExtResource( 4 )]
+
+

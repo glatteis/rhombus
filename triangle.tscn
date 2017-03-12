@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://dot.gd" type="Script" id=1]
+[ext_resource path="res://triangle.png" type="Texture" id=2]
+
+[node name="triangle" type="Position2D"]
+
+script/script = ExtResource( 1 )
+dot_type = "triangle"
+
+[node name="sprite" type="Sprite" parent="."]
+
+transform/scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 2 )
+
+

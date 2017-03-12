@@ -1,0 +1,11 @@
+# Blender v2.70 (sub 0) OBJ File: 'water.blend'
+# www.blender.org
+mtllib water.mtl
+o Plane
+v -7.893723 0.000000 7.893723
+v 7.893723 0.000000 7.893723
+v -7.893723 0.000000 -7.893723
+v 7.893723 0.000000 -7.893723
+usemtl None
+s off
+f 1 2 4 3

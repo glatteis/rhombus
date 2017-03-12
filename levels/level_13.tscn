@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://level.gd" type="Script" id=1]
+[ext_resource path="res://cube.tscn" type="PackedScene" id=2]
+[ext_resource path="res://circle.tscn" type="PackedScene" id=3]
+
+[node name="level_13" type="Node2D"]
+
+script/script = ExtResource( 1 )
+line_color = Color( 0, 0, 0, 1 )
+line_thickness = 5
+scene_number = 13
+custom_next_scene = null
+
+[node name="cube" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 232.13, 622.532 )
+
+[node name="cube2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 889.331, 595.4 )
+
+[node name="cube1" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 985.801, 102.499 )
+
+[node name="circle" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 485.364, 575.804 )
+
+[node name="circle3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 658.131, 197.62 )
+
+[node name="circle5" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 965.395, 336.484 )
+
+[node name="circle6" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 155.972, 197.725 )
+
+[node name="circle7" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 304.253, 65.7691 )
+
+[node name="circle8" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1037.61, 463.443 )
+
+[node name="circle4" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 637.726, 431.604 )
+
+[node name="circle1" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 563.745, 348.196 )
+
+[node name="circle2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 310.512, 394.923 )
+
+

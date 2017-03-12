@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://level.gd" type="Script" id=1]
+[ext_resource path="res://triangle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://circle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://cube.tscn" type="PackedScene" id=4]
+[ext_resource path="res://reset_button.tscn" type="PackedScene" id=5]
+
+[node name="level_8" type="Node2D"]
+
+script/script = ExtResource( 1 )
+line_color = Color( 0, 0, 0, 1 )
+line_thickness = 5
+scene_number = 8
+
+[node name="triangle" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 425, 150 )
+
+[node name="triangle3" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 225, 150 )
+
+[node name="circle" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 325, 300 )
+
+[node name="circle1" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 425, 250 )
+
+[node name="cube" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 800, 300 )
+
+[node name="cube1" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 700, 600 )
+
+[node name="cube2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 225, 600 )
+
+[node name="reset_button" parent="." instance=ExtResource( 5 )]
+
+

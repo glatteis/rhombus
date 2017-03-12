@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://level.gd" type="Script" id=1]
+[ext_resource path="res://cube.tscn" type="PackedScene" id=2]
+[ext_resource path="res://triangle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://circle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://reset_button.tscn" type="PackedScene" id=5]
+
+[node name="level_11" type="Node2D"]
+
+script/script = ExtResource( 1 )
+line_color = Color( 0, 0, 0, 1 )
+line_thickness = 5
+scene_number = 11
+custom_next_scene = null
+
+[node name="cube" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 105.514, 562.238 )
+
+[node name="cube1" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 924, 123.602 )
+
+[node name="triangle" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 725.031, 414.519 )
+transform/rot = -514.2
+
+[node name="triangle1" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 262.277, 159.778 )
+transform/rot = -205.7
+
+[node name="circle" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 552.325, 439.587 )
+
+[node name="circle1" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 651.6, 203.131 )
+
+[node name="circle7" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 743.6, 282.132 )
+
+[node name="circle8" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 842.6, 434.132 )
+
+[node name="circle9" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1023, 275.602 )
+
+[node name="circle3" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 466.211, 86.4963 )
+
+[node name="circle4" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 450.251, 308.717 )
+
+[node name="circle5" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 870.137, 306.261 )
+
+[node name="circle6" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 903.286, 534.621 )
+
+[node name="circle2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 204.789, 325.783 )
+
+[node name="reset_button" parent="." instance=ExtResource( 5 )]
+
+

@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://level.gd" type="Script" id=1]
+[ext_resource path="res://cube.tscn" type="PackedScene" id=2]
+[ext_resource path="res://circle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://triangle.tscn" type="PackedScene" id=4]
+
+[node name="level_12" type="Node2D"]
+
+script/script = ExtResource( 1 )
+line_color = Color( 0, 0, 0, 1 )
+line_thickness = 5
+scene_number = 12
+
+[node name="cube" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 540, 360 )
+
+[node name="circle" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 380, 240 )
+
+[node name="circle1" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 700, 240 )
+
+[node name="circle4" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 540, 600 )
+
+[node name="circle5" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 540, 120 )
+
+[node name="circle2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 700, 480 )
+
+[node name="circle7" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 860, 360 )
+
+[node name="circle3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 380, 480 )
+
+[node name="triangle" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 73.8587, 62.3373 )
+
+[node name="triangle1" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 73.8587, 162.338 )
+
+

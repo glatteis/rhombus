@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://level.gd" type="Script" id=1]
+[ext_resource path="res://triangle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://cube.tscn" type="PackedScene" id=3]
+[ext_resource path="res://circle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://reset_button.tscn" type="PackedScene" id=5]
+
+[node name="level_18" type="Node2D"]
+
+script/script = ExtResource( 1 )
+line_color = Color( 0, 0, 0, 1 )
+line_thickness = 5
+scene_number = 18
+custom_next_scene = null
+
+[node name="triangle" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 126.709, 465.786 )
+
+[node name="triangle1" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 802.621, 627.133 )
+
+[node name="triangle2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 764.833, 428.409 )
+
+[node name="cube" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 541.433, 343.767 )
+
+[node name="circle" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 949.042, 314.301 )
+
+[node name="circle2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 401.471, 101.902 )
+
+[node name="circle1" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 809.08, 72.4366 )
+
+[node name="circle3" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 591.77, 203.805 )
+
+[node name="circle4" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 591.77, 203.805 )
+transform/rot = -119.571
+
+[node name="circle10" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 820.129, 353.589 )
+transform/rot = -119.571
+
+[node name="circle11" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 983.419, 599.136 )
+transform/rot = -119.571
+
+[node name="circle5" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 763.653, 207.488 )
+transform/rot = -119.571
+
+[node name="circle6" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 658.068, 581.948 )
+transform/rot = -119.571
+
+[node name="circle7" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 967.458, 489.868 )
+transform/rot = -119.571
+
+[node name="circle8" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 290.974, 508.284 )
+transform/rot = -119.571
+
+[node name="circle9" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 252.914, 294.657 )
+transform/rot = -119.571
+
+[node name="reset_button" parent="." instance=ExtResource( 5 )]
+
+[node name="cube 2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 85.9417, 170.656 )
+transform/rot = -154.3
+
+[node name="cube3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 249.231, 416.203 )
+transform/rot = -154.3
+
+

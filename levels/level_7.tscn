@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://level.gd" type="Script" id=1]
+[ext_resource path="res://triangle.tscn" type="PackedScene" id=2]
+
+[node name="level_7" type="Node2D"]
+
+script/script = ExtResource( 1 )
+line_color = Color( 0, 0, 0, 1 )
+line_thickness = 5
+scene_number = 7
+
+[node name="triangle" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 681.108, 48.7975 )
+
+[node name="triangle3" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 398.892, 275.346 )
+
+[node name="triangle1" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 681.108, 248.797 )
+
+[node name="triangle3 3" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 398.892, 475.346 )
+
+[node name="triangle2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 681.108, 448.797 )
+
+[node name="triangle3 2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 398.892, 675.346 )
+
+
