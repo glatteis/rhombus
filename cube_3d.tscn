@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://models/box.msh" type="Mesh" id=1]
+[ext_resource path="res://dot_rotation.gd" type="Script" id=2]
+
+[node name="cube" type="Node2D"]
+
+[node name="viewport" type="Viewport" parent="."]
+
+rect = Rect2( 0, 0, 1000, 1000 )
+own_world = true
+world = null
+transparent_bg = false
+render_target/enabled = true
+render_target/v_flip = false
+render_target/clear_on_new_frame = true
+render_target/filter = true
+render_target/gen_mipmaps = false
+render_target/update_mode = 2
+audio_listener/enable_2d = false
+audio_listener/enable_3d = false
+physics/object_picking = false
+gui/disable_input = false
+
+[node name="world" type="Spatial" parent="viewport"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="camera" type="Camera" parent="viewport/world"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.32025 )
+projection = 1
+size = 3.38632
+near = 0.1
+far = 100.0
+keep_aspect = 1
+current = true
+visible_layers = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+
+[node name="mesh" type="MeshInstance" parent="viewport/world"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+layers = 1
+geometry/visible = true
+geometry/material_override = null
+geometry/cast_shadow = 0
+geometry/receive_shadows = false
+geometry/range_begin = 0.0
+geometry/range_end = 0.0
+geometry/extra_cull_margin = 0.0
+geometry/billboard = false
+geometry/billboard_y = false
+geometry/depth_scale = false
+geometry/visible_in_all_rooms = false
+geometry/use_baked_light = false
+geometry/baked_light_tex_id = 0
+mesh/mesh = ExtResource( 1 )
+mesh/skeleton = NodePath("..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+script/script = ExtResource( 2 )
+
+[node name="sprite" type="ViewportSprite" parent="."]
+
+transform/scale = Vector2( 0.15, 0.15 )
+viewport = NodePath("../viewport")
+
+

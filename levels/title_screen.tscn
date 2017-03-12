@@ -1,66 +1,59 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://levels/title_screen.gd" type="Script" id=1]
-[ext_resource path="res://menu_logo.png" type="Texture" id=2]
-[ext_resource path="res://level.gd" type="Script" id=3]
-[ext_resource path="res://triangle.tscn" type="PackedScene" id=4]
-[ext_resource path="res://cube.tscn" type="PackedScene" id=5]
+[ext_resource path="res://level.gd" type="Script" id=2]
+[ext_resource path="res://triangle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://cube.tscn" type="PackedScene" id=4]
 
 [node name="title_screen" type="Node2D"]
 
 script/script = ExtResource( 1 )
 
-[node name="sprite" type="Sprite" parent="."]
-
-transform/pos = Vector2( 558, 200 )
-transform/scale = Vector2( 0.3, 0.3 )
-texture = ExtResource( 2 )
-
 [node name="title_level" type="Node2D" parent="."]
 
-script/script = ExtResource( 3 )
+script/script = ExtResource( 2 )
 line_color = Color( 0, 0, 0, 1 )
 line_thickness = 5
 scene_number = 0
 custom_next_scene = null
 
-[node name="triangle" parent="title_level" instance=ExtResource( 4 )]
+[node name="triangle" parent="title_level" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 510.934, 557.825 )
 transform/rot = -90.0
 
-[node name="triangle2" parent="title_level" instance=ExtResource( 4 )]
+[node name="triangle2" parent="title_level" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 510.934, 657.825 )
 transform/rot = -90.0
 
-[node name="triangle1" parent="title_level" instance=ExtResource( 4 )]
+[node name="triangle1" parent="title_level" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 610.934, 605.825 )
 transform/rot = -90.0
 
 [node name="menu_button" type="Node2D" parent="."]
 
-script/script = ExtResource( 3 )
+script/script = ExtResource( 2 )
 line_color = Color( 0, 0, 0, 1 )
 line_thickness = 5
 scene_number = 1
 custom_next_scene = "res://menu/menu.tscn"
 
-[node name="cube" parent="menu_button" instance=ExtResource( 5 )]
+[node name="cube2 2" parent="menu_button" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 262.009, 678.995 )
+transform/pos = Vector2( 113.596, 665.129 )
 
-[node name="cube2 2" parent="menu_button" instance=ExtResource( 5 )]
+[node name="cube23" parent="menu_button" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 118.363, 666.718 )
+transform/pos = Vector2( 244.72, 665.129 )
 
-[node name="cube1" parent="menu_button" instance=ExtResource( 5 )]
+[node name="cube1" parent="menu_button" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 118.363, 556.222 )
+transform/pos = Vector2( 113.596, 554.633 )
 
-[node name="cube2" parent="menu_button" instance=ExtResource( 5 )]
+[node name="cube2" parent="menu_button" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 253.697, 559.275 )
+transform/pos = Vector2( 244.72, 554.633 )
 
 

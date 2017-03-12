@@ -34,10 +34,9 @@ func _ready():
 	if scene_number != 0:
 		save_progress()
 	add_child(cursor_line)
-
-func _process(delta):
-	#print(typeof(get_children()))
-	print(recursive_count(get_children()))
+	if custom_next_scene != null:
+		add_child(load("res://background/background.tscn").instance())
+	
 
 func recursive_count(l):
 	var c = 0
