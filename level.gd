@@ -25,11 +25,11 @@ var drawn_done_nodes = []
 
 func _ready():
 	collect_children()
-	fade_animation.connect("finished", self, "_on_fade_finished")
-	add_child(fade_animation)
 	set_process_input(true)
 	set_opacity(0)
 	set_process(true)
+	fade_animation.connect("finished", self, "_on_fade_finished")
+	add_child(fade_animation)
 	fade_animation.play_backwards("fade")
 	if scene_number != 0:
 		save_progress()
@@ -91,8 +91,6 @@ func _input(event):
 							mouse_nodes.remove(mouse_nodes.size() - 1)
 					break
 		update()
-
-
 
 func _draw():
 	if do_cursor_drawing and not mouse_nodes.empty():

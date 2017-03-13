@@ -14,6 +14,7 @@ func _ready():
 		var scale = rand_range(0.1, 2)
 		c.set_scale(Vector3(scale, scale, scale))
 		c.set_translation(Vector3(rand_range(-4, 4), rand_range(-1, 1), rand_range(-3, -8)))
+		c.set_rotation(Vector3(randf() * 2 * PI, randf() * 2 * PI, randf() * 2 * PI))
 		cube_rotations.append(Vector3(randf(), randf(), randf()).normalized())
 		var material_override = FixedMaterial.new()
 		material_override.set_parameter(FixedMaterial.PARAM_DIFFUSE, Color(randf(), randf(), randf()))

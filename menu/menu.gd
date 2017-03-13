@@ -1,5 +1,6 @@
 extends Node2D
 
+onready var fade_animation = load("res://fade.tscn").instance()
 onready var container = get_node("container")
 onready var button = load("res://menu/level_button.tscn")
 var unlocked_levels = 100
@@ -15,10 +16,12 @@ func _ready():
 		for x in range(levels_per_row):
 			var b = button.instance()
 			container.add_child(b)
-			b.set_pos(Vector2(margin_left + x * level_size, margin_top + y * level_size))
+			var position = Vector2(margin_left + x * level_size, margin_top + y * level_size)
+			b.set_pos(position)
 			b.set_level_num(y * levels_per_row + x + 1)
 	init_display()
-
+	add_child(fade_animation)
+	fade_animation.play_backwards("fade")
 
 func _on_button_up_pressed():
 	if display_starting > 0:

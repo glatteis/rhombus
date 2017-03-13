@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://level.gd" type="Script" id=1]
 [ext_resource path="res://cube.tscn" type="PackedScene" id=2]
 [ext_resource path="res://circle.tscn" type="PackedScene" id=3]
 [ext_resource path="res://triangle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://reset_button.tscn" type="PackedScene" id=5]
 
 [node name="level_12" type="Node2D"]
 
@@ -11,6 +12,7 @@ script/script = ExtResource( 1 )
 line_color = Color( 0, 0, 0, 1 )
 line_thickness = 5
 scene_number = 12
+custom_next_scene = null
 
 [node name="cube" parent="." instance=ExtResource( 2 )]
 
@@ -46,10 +48,12 @@ transform/pos = Vector2( 380, 480 )
 
 [node name="triangle" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 73.8587, 62.3373 )
+transform/pos = Vector2( 173.859, 62.3373 )
 
 [node name="triangle1" parent="." instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 73.8587, 162.338 )
+
+[node name="reset_button" parent="." instance=ExtResource( 5 )]
 
 
