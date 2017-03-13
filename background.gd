@@ -23,4 +23,4 @@ func _ready():
 
 func _process(delta):
 	for i in range(cubes.size()):
-		cubes[i].rotate(cube_rotations[i], delta / 10)
+		cubes[i].rotate(cube_rotations[i], delta / 100)
